@@ -188,3 +188,37 @@ footer p {
 }
 
 /* Media */
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .header-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0px 0px 0px 0px;
+    }
+
+    #active {
+        padding: 10px 100vw 0px;
+    }
+
+    .text-home {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .info-home h1 {
+        text-align: center;
+    }
+
+    .text-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    embed {
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+}
