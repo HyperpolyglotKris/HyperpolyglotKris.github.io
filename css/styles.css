@@ -80,12 +80,14 @@ article a {
 
 .text-about {
     display: grid;
+    font-size: 1.2rem;
     grid-template-columns: 1fr 1fr;
-    column-gap: 12px;
+    column-gap: 24px;
 }
 
 /* Home Elements */
 .text-home {
+    font-size: 1.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 12px;
@@ -147,13 +149,6 @@ embed {
     border-radius: 12px;
 }
 
-.cv a {
-    display: block;
-    margin-top: 0px;
-    font-weight: 1000;
-    text-align: center;
-}
-
 /* Project Elements */
 .project li {
     font-weight: 500;
@@ -164,21 +159,39 @@ embed {
     margin: 0px 0px 4px 12px;
 }
 
+.cv a {
+    font-weight: 1000;
+}
+
 /* Contact Elements */
 
 .contact-info {
-    text-align: center;
     font-size: 1.2rem;
+    margin: auto;
+    margin-top: 10vh;
+    width: 100%;
 }
 
-.contact-info h3 {
+.contact-info li {
+    font-size: 1.5rem;
+    list-style-position: inside;
+    list-style-type: circle;
+    display: block;
     font-weight: 500;
+    overflow: visible;
+    margin-bottom: 12px;
+    word-wrap: break-word;
 }
 
 .contact-info a:visited,
 .contact-info a {
     color: black;
     text-decoration: underline solid 1px black;
+}
+
+.contact-info h3 {
+    text-align: center;
+    font-size: 2rem;
 }
 
 /* Footer */
@@ -241,10 +254,5 @@ footer p {
 
     .contact-info {
         display: block;
-    }
-
-    .contact-info h3 {
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }
