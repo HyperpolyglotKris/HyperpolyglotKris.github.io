@@ -41,6 +41,7 @@ header a {
     text-decoration: none;
     padding: 10px 0px;
     justify-self: center;
+    white-space: nowrap;
 }
 
 a:visited {
@@ -59,17 +60,16 @@ article a {
 }
 
 /* Content */
-
 .content {
     padding: 0px 10vw;
     margin-bottom: 5rem;
 }
 
-li {
+.text-about li {
     font-weight: 1000;
 }
 
-li p {
+.text-about li p {
     font-weight: 500;
     margin: 6px 0px;
 }
@@ -84,18 +84,15 @@ li p {
     column-gap: 12px;
 }
 
-
-
-
 /* Home Elements */
 .text-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 12px;
-    background-color: rgba(204, 68, 75, 0.4);
+    /* background-color: rgba(204, 68, 75, 0.4); */
     border-radius: 12px;
     padding: 24px 6px;
-    outline: solid black 1px;
+    /* outline: solid black 1px; */
 }
 
 .profile-photo img {
@@ -127,6 +124,47 @@ li p {
     margin-bottom: 24px;
 }
 
+.home-name {
+    font-size: 4rem;
+    margin: 12px 0px 12px 0px;
+}
+
+.intro {
+    font-size: 3rem;
+    text-align: center;
+    margin: 16px 10vw 12px 10vw;
+}
+
+/* About Elements */
+.headline {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Project Elements */
+.project li {
+    font-weight: 500;
+}
+
+.project li p {
+    font-weight: 500;
+    margin: 0px 0px 4px 12px;
+}
+
+/* Contact Elements */
+
+.contact-info {
+    display: grid;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact-info a:visited,
+.contact-info a {
+    color: black;
+    text-decoration: underline solid blue;
+}
+
 /* Footer */
 .page-container {
     overflow: hidden;
@@ -148,3 +186,5 @@ footer {
 footer p {
     justify-self: center;
 }
+
+/* Media */
