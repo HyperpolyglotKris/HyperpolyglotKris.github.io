@@ -199,8 +199,9 @@ footer p {
         margin: 0px 0px 0px 0px;
     }
 
+    header a,
     #active {
-        padding: 10px 100vw 0px;
+        padding: 6px 100vw 6px;
     }
 
     .text-home {
@@ -215,10 +216,25 @@ footer p {
     .text-about {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        display: block;
     }
 
     embed {
         min-width: fit-content;
         min-height: fit-content;
+    }
+
+    .content {
+        padding: 0px 5vw
+    }
+
+    .contact-info {
+        display: block;
+    }
+
+    .contact-info h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 500;
     }
 }
