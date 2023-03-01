@@ -139,6 +139,13 @@ article a {
     text-align: center;
 }
 
+embed {
+    width: 100%;
+    height: 50vw;
+    min-height: 780px;
+    max-height: 50%;
+}
+
 /* Project Elements */
 .project li {
     font-weight: 500;
@@ -218,11 +225,6 @@ footer p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         display: block;
-    }
-
-    embed {
-        min-width: fit-content;
-        min-height: fit-content;
     }
 
     .content {
