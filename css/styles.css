@@ -89,10 +89,8 @@ article a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 12px;
-    /* background-color: rgba(204, 68, 75, 0.4); */
     border-radius: 12px;
     padding: 24px 6px;
-    /* outline: solid black 1px; */
 }
 
 .profile-photo img {
@@ -154,15 +152,18 @@ article a {
 /* Contact Elements */
 
 .contact-info {
-    display: grid;
     text-align: center;
     font-size: 1.2rem;
+}
+
+.contact-info h3 {
+    font-weight: 500;
 }
 
 .contact-info a:visited,
 .contact-info a {
     color: black;
-    text-decoration: underline solid blue;
+    text-decoration: underline solid 1px black;
 }
 
 /* Footer */
@@ -188,7 +189,7 @@ footer p {
 }
 
 /* Media */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     header {
         grid-template-columns: 1fr;
     }
@@ -235,6 +236,5 @@ footer p {
     .contact-info h3 {
         overflow: hidden;
         text-overflow: ellipsis;
-        font-weight: 500;
     }
 }
