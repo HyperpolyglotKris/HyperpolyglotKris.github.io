@@ -144,6 +144,14 @@ embed {
     height: 50vw;
     min-height: 780px;
     max-height: 50%;
+    border-radius: 12px;
+}
+
+.cv a {
+    display: block;
+    margin-top: 0px;
+    font-weight: 1000;
+    text-align: center;
 }
 
 /* Project Elements */
